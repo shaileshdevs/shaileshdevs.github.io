@@ -21,6 +21,9 @@ body {
   background-color: #333;
   width: 200px;
   padding: 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
 }
 
 .sidebar nav ul {
@@ -37,8 +40,9 @@ body {
 }
 
 .main-content {
-  flex: 1;
   padding: 20px;
+  padding-left: 20px 20px 20px 220px;
+  flex: 1;
 }
 
 section {
