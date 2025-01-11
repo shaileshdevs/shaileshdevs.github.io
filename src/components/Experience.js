@@ -50,22 +50,20 @@ function Experience() {
   ];
 
   return (
-    <section id="experience" className="min-h-screen p-8">
-      <h2 className="text-3xl font-bold text-amber-500 mb-6">Experience</h2>
-      <div className="space-y-8">
-        {experiences.map((exp, index) => (
-          <div key={index} className="bg-gray-800 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-white">{exp.title}</h3>
-            <p className="text-amber-500">{exp.company}</p>
-            <p className="text-gray-400 mb-4">{exp.period}</p>
-            <ul className="list-disc list-inside text-gray-400">
-              {exp.responsibilities.map((resp, idx) => (
-                <li key={idx} className="mb-2">{resp}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
+    <section id="experience">
+      <h2>Experience</h2>
+      {experiences.map((exp, index) => (
+        <div key={index} className="experience-item">
+          <h3>{exp.title}</h3>
+          <p>{exp.company}</p>
+          <p>{exp.period}</p>
+          <ul>
+            {exp.responsibilities.map((resp, idx) => (
+              <li key={idx}>{resp}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </section>
   );
 }

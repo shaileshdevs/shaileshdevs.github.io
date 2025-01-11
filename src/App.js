@@ -9,17 +9,15 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="flex min-h-screen bg-gray-900">
+    <div className="app">
       <Sidebar />
-      <main className="flex-1 ml-[200px] overflow-auto">
-        <div className="max-w-6xl mx-auto">
-          <Home />
-          <About />
-          <Experience />
-          <Skills />
-          <Clients />
-          <Contact />
-        </div>
+      <main className="main-content">
+        <Home />
+        <About />
+        <Experience />
+        <Skills />
+        <Clients />
+        <Contact />
       </main>
     </div>
   );
