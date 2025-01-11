@@ -40,9 +40,8 @@ body {
 }
 
 .main-content {
-  padding: 20px;
-  padding-left: 20px 20px 20px 220px;
   flex: 1;
+  padding: 20px 20px 20px 220px;
 }
 
 section {
