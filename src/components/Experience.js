@@ -5,6 +5,7 @@ function Experience() {
     {
       title: "Sr. Full Stack Developer",
       company: "Pixacore",
+      url: "https://pixacore.com",
       period: "Jun 2023 - Jan 2025",
       responsibilities: [
         "Optimized the automation process from 12 hours to 4 hours.",
@@ -23,6 +24,7 @@ function Experience() {
     {
       title: "Sr. Software Engineer - Product",
       company: "Wisdmlabs",
+      url: "https://wisdmlabs.com",
       period: "Jan 2018 - Jun 2023",
       responsibilities: [
         "Customized WordPress themes and plugins to meet client specifications and enhance user experience.",
@@ -55,8 +57,9 @@ function Experience() {
       {experiences.map((exp, index) => (
         <div key={index} className="experience-item">
           <h3>{exp.title}</h3>
-          <p>{exp.company}</p>
-          <p>{exp.period}</p>
+          <p className="company">
+            <a href={exp.url} target="_blank"><span>{exp.company}</span></a> | <span>{exp.period}</span>
+          </p>
           <ul>
             {exp.responsibilities.map((resp, idx) => (
               <li key={idx}>{resp}</li>

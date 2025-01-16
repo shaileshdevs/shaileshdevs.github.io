@@ -27317,48 +27317,26 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
 function Sidebar() {
+    _s();
+    const [activeMenu, setActiveMenu] = (0, _react.useState)("home");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("aside", {
         className: "sidebar",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+            className: "menus",
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: "home" == activeMenu ? "active" : "",
+                        onClick: ()=>setActiveMenu("home"),
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                             href: "#home",
                             children: "Home"
                         }, void 0, false, {
                             fileName: "src/components/Sidebar.js",
-                            lineNumber: 8,
-                            columnNumber: 15
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/Sidebar.js",
-                        lineNumber: 8,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            href: "#about",
-                            children: "About"
-                        }, void 0, false, {
-                            fileName: "src/components/Sidebar.js",
-                            lineNumber: 9,
-                            columnNumber: 15
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/Sidebar.js",
-                        lineNumber: 9,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            href: "#experience",
-                            children: "Experience"
-                        }, void 0, false, {
-                            fileName: "src/components/Sidebar.js",
-                            lineNumber: 10,
-                            columnNumber: 15
+                            lineNumber: 14,
+                            columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/Sidebar.js",
@@ -27366,64 +27344,103 @@ function Sidebar() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: "about" == activeMenu ? "active" : "",
+                        onClick: ()=>setActiveMenu("about"),
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "#about",
+                            children: "About"
+                        }, void 0, false, {
+                            fileName: "src/components/Sidebar.js",
+                            lineNumber: 20,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/components/Sidebar.js",
+                        lineNumber: 16,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: "experience" == activeMenu ? "active" : "",
+                        onClick: ()=>setActiveMenu("experience"),
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "#experience",
+                            children: "Experience"
+                        }, void 0, false, {
+                            fileName: "src/components/Sidebar.js",
+                            lineNumber: 26,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/components/Sidebar.js",
+                        lineNumber: 22,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: "skills" == activeMenu ? "active" : "",
+                        onClick: ()=>setActiveMenu("skills"),
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                             href: "#skills",
                             children: "Skills"
                         }, void 0, false, {
                             fileName: "src/components/Sidebar.js",
-                            lineNumber: 11,
-                            columnNumber: 15
+                            lineNumber: 32,
+                            columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/Sidebar.js",
-                        lineNumber: 11,
+                        lineNumber: 28,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: "clients" == activeMenu ? "active" : "",
+                        onClick: ()=>setActiveMenu("clients"),
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                             href: "#clients",
                             children: "Clients"
                         }, void 0, false, {
                             fileName: "src/components/Sidebar.js",
-                            lineNumber: 12,
-                            columnNumber: 15
+                            lineNumber: 38,
+                            columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/Sidebar.js",
-                        lineNumber: 12,
+                        lineNumber: 34,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: "contact" == activeMenu ? "active" : "",
+                        onClick: ()=>setActiveMenu("contact"),
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                             href: "#contact",
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "src/components/Sidebar.js",
-                            lineNumber: 13,
-                            columnNumber: 15
+                            lineNumber: 44,
+                            columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/Sidebar.js",
-                        lineNumber: 13,
+                        lineNumber: 40,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Sidebar.js",
-                lineNumber: 7,
+                lineNumber: 9,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "src/components/Sidebar.js",
-            lineNumber: 6,
+            lineNumber: 8,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/components/Sidebar.js",
-        lineNumber: 5,
+        lineNumber: 7,
         columnNumber: 5
     }, this);
 }
+_s(Sidebar, "yJi35cq3EdlmUo2x/aU2FAKJe5M=");
 _c = Sidebar;
 exports.default = Sidebar;
 var _c;
@@ -27640,7 +27657,7 @@ function Home() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "With over 6 years of experience in WordPress development, I create robust and scalable web solutions."
+                children: "With over 6 years of experience in WordPress development."
             }, void 0, false, {
                 fileName: "src/components/Home.js",
                 lineNumber: 8,
@@ -27653,8 +27670,43 @@ function Home() {
                         href: "https://github.com/shaileshdevs",
                         target: "_blank",
                         rel: "noopener noreferrer",
-                        children: "GitHub"
-                    }, void 0, false, {
+                        className: "github-link",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                role: "img",
+                                viewBox: "0 0 24 24",
+                                fill: "white",
+                                xmlns: "http://www.w3.org/2000/svg",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("title", {
+                                        children: "GitHub"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Home.js",
+                                        lineNumber: 12,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                        d: "M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.385.6.11.793-.26.793-.577v-2.165c-3.338.726-4.042-1.416-4.042-1.416-.547-1.387-1.334-1.756-1.334-1.756-1.091-.745.083-.729.083-.729 1.205.085 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.997.108-.775.42-1.305.763-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.382 1.235-3.22-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.482 11.482 0 0 1 3.003-.404c1.02.004 2.045.138 3.003.404 2.29-1.552 3.296-1.23 3.296-1.23.654 1.653.242 2.873.12 3.176.77.838 1.233 1.91 1.233 3.22 0 4.61-2.806 5.625-5.478 5.921.431.372.817 1.103.817 2.222v3.293c0 .32.192.693.8.576C20.565 21.796 24 17.298 24 12 24 5.373 18.627 0 12 0z"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Home.js",
+                                        lineNumber: 13,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Home.js",
+                                lineNumber: 11,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: "GitHub"
+                            }, void 0, false, {
+                                fileName: "src/components/Home.js",
+                                lineNumber: 16,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/components/Home.js",
                         lineNumber: 10,
                         columnNumber: 9
@@ -27663,10 +27715,47 @@ function Home() {
                         href: "https://www.linkedin.com/in/shailesh-vishwakarma-20a798104/",
                         target: "_blank",
                         rel: "noopener noreferrer",
-                        children: "LinkedIn"
-                    }, void 0, false, {
+                        className: "linkedin-link",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                role: "img",
+                                viewBox: "0 0 24 24",
+                                fill: "white",
+                                xmlns: "http://www.w3.org/2000/svg",
+                                width: "24",
+                                height: "24",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("title", {
+                                        children: "LinkedIn"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Home.js",
+                                        lineNumber: 21,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                        d: "M22.23 0H1.77C.79 0 0 .774 0 1.726v20.548C0 23.226.79 24 1.77 24h20.46c.98 0 1.77-.774 1.77-1.726V1.726C24 .774 23.21 0 22.23 0zM7.12 20.452H3.56V9h3.56v11.452zM5.34 7.56c-1.14 0-2.06-.92-2.06-2.06s.92-2.06 2.06-2.06c1.14 0 2.06.92 2.06 2.06s-.92 2.06-2.06 2.06zM20.45 20.452h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.34V9h3.42v1.57h.05c.48-.91 1.67-1.85 3.44-1.85 3.68 0 4.36 2.42 4.36 5.57v6.15z"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Home.js",
+                                        lineNumber: 22,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Home.js",
+                                lineNumber: 20,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: "LinkedIn"
+                            }, void 0, false, {
+                                fileName: "src/components/Home.js",
+                                lineNumber: 25,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/components/Home.js",
-                        lineNumber: 11,
+                        lineNumber: 19,
                         columnNumber: 9
                     }, this)
                 ]
@@ -27716,15 +27805,13 @@ function About() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "I am a dedicated and skilled software engineer specializing in WordPress development. My experience includes extensive work in creating and modifying WordPress plugins and themes."
+                children: "I am a dedicated and skilled software engineer specializing in WordPress development. My experience includes extensive work in creating and modifying WordPress plugins and themes. I have a strong foundation in software engineering principles, best practices and WordPress coding standards. I am well-versed in integrating third-party services like Elastic Search, Mailchimp."
             }, void 0, false, {
                 fileName: "src/components/About.js",
                 lineNumber: 7,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "I have a strong foundation in software engineering principles, best practices and WordPress coding standards. I am well-versed in integrating third-party services like Elastic Search, Mailchimp."
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                 fileName: "src/components/About.js",
                 lineNumber: 8,
                 columnNumber: 7
@@ -27770,6 +27857,7 @@ function Experience() {
         {
             title: "Sr. Full Stack Developer",
             company: "Pixacore",
+            url: "https://pixacore.com",
             period: "Jun 2023 - Jan 2025",
             responsibilities: [
                 "Optimized the automation process from 12 hours to 4 hours.",
@@ -27788,6 +27876,7 @@ function Experience() {
         {
             title: "Sr. Software Engineer - Product",
             company: "Wisdmlabs",
+            url: "https://wisdmlabs.com",
             period: "Jan 2018 - Jun 2023",
             responsibilities: [
                 "Customized WordPress themes and plugins to meet client specifications and enhance user experience.",
@@ -27820,7 +27909,7 @@ function Experience() {
                 children: "Experience"
             }, void 0, false, {
                 fileName: "src/components/Experience.js",
-                lineNumber: 54,
+                lineNumber: 56,
                 columnNumber: 7
             }, this),
             experiences.map((exp, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27830,21 +27919,39 @@ function Experience() {
                             children: exp.title
                         }, void 0, false, {
                             fileName: "src/components/Experience.js",
-                            lineNumber: 57,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: exp.company
-                        }, void 0, false, {
-                            fileName: "src/components/Experience.js",
-                            lineNumber: 58,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: exp.period
-                        }, void 0, false, {
-                            fileName: "src/components/Experience.js",
                             lineNumber: 59,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "company",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: exp.url,
+                                    target: "_blank",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: exp.company
+                                    }, void 0, false, {
+                                        fileName: "src/components/Experience.js",
+                                        lineNumber: 61,
+                                        columnNumber: 47
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/components/Experience.js",
+                                    lineNumber: 61,
+                                    columnNumber: 13
+                                }, this),
+                                " | ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: exp.period
+                                }, void 0, false, {
+                                    fileName: "src/components/Experience.js",
+                                    lineNumber: 61,
+                                    columnNumber: 80
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Experience.js",
+                            lineNumber: 60,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -27852,24 +27959,24 @@ function Experience() {
                                     children: resp
                                 }, idx, false, {
                                     fileName: "src/components/Experience.js",
-                                    lineNumber: 62,
+                                    lineNumber: 65,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "src/components/Experience.js",
-                            lineNumber: 60,
+                            lineNumber: 63,
                             columnNumber: 11
                         }, this)
                     ]
                 }, index, true, {
                     fileName: "src/components/Experience.js",
-                    lineNumber: 56,
+                    lineNumber: 58,
                     columnNumber: 9
                 }, this))
         ]
     }, void 0, true, {
         fileName: "src/components/Experience.js",
-        lineNumber: 53,
+        lineNumber: 55,
         columnNumber: 5
     }, this);
 }
