@@ -27964,47 +27964,58 @@ function Skills() {
     const skills = [
         {
             name: "WordPress",
-            years: 6
+            years: 6,
+            skillIndex: 8
         },
         {
             name: "PHP",
-            years: 6
+            years: 6,
+            skillIndex: 8
         },
         {
             name: "HTML",
-            years: 6
+            years: 6,
+            skillIndex: 8
         },
         {
             name: "CSS",
-            years: 6
+            years: 6,
+            skillIndex: 8
         },
         {
             name: "JavaScript",
-            years: 6
+            years: 6,
+            skillIndex: 8
         },
         {
             name: "jQuery",
-            years: 6
+            years: 6,
+            skillIndex: 8
         },
         {
             name: "MySQL",
-            years: 6
+            years: 6,
+            skillIndex: 8
         },
         {
             name: "REST API",
-            years: 3
+            years: 3,
+            skillIndex: 8
         },
         {
             name: "ReactJs",
-            years: 1
+            years: 1,
+            skillIndex: 6
         },
         {
             name: "Git",
-            years: 6
+            years: 6,
+            skillIndex: 8
         },
         {
             name: "Linux",
-            years: 6
+            years: 6,
+            skillIndex: 8
         }
     ];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28039,6 +28050,36 @@ function Skills() {
                             }, void 0, true, {
                                 fileName: "src/components/Skills.js",
                                 lineNumber: 25,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "progress-container",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("progress", {
+                                        className: "progress-bar",
+                                        value: skill.skillIndex,
+                                        max: "10"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Skills.js",
+                                        lineNumber: 27,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "tooltip",
+                                        children: [
+                                            "Expertise: ",
+                                            skill.skillIndex,
+                                            "/10"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Skills.js",
+                                        lineNumber: 28,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Skills.js",
+                                lineNumber: 26,
                                 columnNumber: 13
                             }, this)
                         ]

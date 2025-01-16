@@ -128,6 +128,45 @@ main #skills .skills-grid .skill-item p {
   color: #8b8f94;
 }
 
+main #skills .skills-grid .skill-item .progress-container {
+  margin-top: 10px;
+  position: relative;
+}
+
+main #skills .skills-grid .skill-item .progress-container progress {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  width: 100%;
+  height: 8px;
+}
+
+main #skills .skills-grid .skill-item .progress-container progress::-webkit-progress-bar {
+  background-color: red;
+  border-radius: 5px;
+}
+
+main #skills .skills-grid .skill-item .progress-container progress::-webkit-progress-value {
+  background-color: #fdb347;
+  border-radius: 5px;
+}
+
+main #skills .skills-grid .skill-item .progress-container .tooltip {
+  color: #fff;
+  white-space: nowrap;
+  z-index: 10;
+  background-color: #000000b3;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  display: none;
+  position: absolute;
+  right: 0;
+}
+
+main #skills .skills-grid .skill-item .progress-container:hover .tooltip {
+  display: block;
+}
+
 .cta-button {
   color: #000;
   text-transform: uppercase;
