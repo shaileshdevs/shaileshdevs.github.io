@@ -31,7 +31,7 @@ function Sidebar() {
             >
             <a href="#skills">Skills</a>
           </li>
-          <li 
+          {/* <li 
             className={ "clients" == activeMenu ? "active" : "" }
             onClick={ () => setActiveMenu( "clients" ) }
             >
@@ -42,7 +42,7 @@ function Sidebar() {
             onClick={ () => setActiveMenu( "contact" ) }
             >
             <a href="#contact">Contact</a>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </aside>

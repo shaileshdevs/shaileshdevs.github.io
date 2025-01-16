@@ -9,8 +9,8 @@ function Skills() {
     { name: "JavaScript", years: 6 },
     { name: "jQuery", years: 6 },
     { name: "MySQL", years: 6 },
-    { name: "REST", years: 3 },
-    { name: "React", years: 1 },
+    { name: "REST API", years: 3 },
+    { name: "ReactJs", years: 1 },
     { name: "Git", years: 6 },
     { name: "Linux", years: 6 }
   ];
@@ -22,7 +22,7 @@ function Skills() {
         {skills.map((skill, index) => (
           <div key={index} className="skill-item">
             <h3>{skill.name}</h3>
-            <p>{skill.years} years experience</p>
+            <p>{skill.years} {skill.years > 1 ? "years" : "year"} experience</p>
           </div>
         ))}
       </div>

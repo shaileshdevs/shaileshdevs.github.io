@@ -63,6 +63,7 @@ main {
   min-height: 100vh;
   /* Section styles */
   /* Experience section */
+  /* Skills section */
 }
 main section {
   padding: 4rem 0;
@@ -108,6 +109,24 @@ main #experience .experience-item h3 {
 main #experience .experience-item .company {
   color: #8b8f94;
   margin-bottom: 1rem;
+}
+main #skills .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+main #skills .skills-grid .skill-item {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+main #skills .skills-grid .skill-item h3 {
+  color: #fdb347;
+}
+main #skills .skills-grid .skill-item p {
+  color: #8b8f94;
 }
 
 /* CTA Button */

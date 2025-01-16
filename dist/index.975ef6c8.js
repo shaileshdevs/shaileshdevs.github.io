@@ -27250,7 +27250,7 @@ function App() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
-                className: "main-content",
+                className: "main-content shvsh",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                         fileName: "src/App.js",
@@ -27270,16 +27270,6 @@ function App() {
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skillsDefault.default), {}, void 0, false, {
                         fileName: "src/App.js",
                         lineNumber: 18,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _clientsDefault.default), {}, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 19,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 20,
                         columnNumber: 9
                     }, this)
                 ]
@@ -27389,38 +27379,6 @@ function Sidebar() {
                     }, void 0, false, {
                         fileName: "src/components/Sidebar.js",
                         lineNumber: 28,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        className: "clients" == activeMenu ? "active" : "",
-                        onClick: ()=>setActiveMenu("clients"),
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            href: "#clients",
-                            children: "Clients"
-                        }, void 0, false, {
-                            fileName: "src/components/Sidebar.js",
-                            lineNumber: 38,
-                            columnNumber: 13
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/Sidebar.js",
-                        lineNumber: 34,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        className: "contact" == activeMenu ? "active" : "",
-                        onClick: ()=>setActiveMenu("contact"),
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            href: "#contact",
-                            children: "Contact"
-                        }, void 0, false, {
-                            fileName: "src/components/Sidebar.js",
-                            lineNumber: 44,
-                            columnNumber: 13
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/Sidebar.js",
-                        lineNumber: 40,
                         columnNumber: 11
                     }, this)
                 ]
@@ -28033,11 +27991,11 @@ function Skills() {
             years: 6
         },
         {
-            name: "REST",
+            name: "REST API",
             years: 3
         },
         {
-            name: "React",
+            name: "ReactJs",
             years: 1
         },
         {
@@ -28074,7 +28032,9 @@ function Skills() {
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: [
                                     skill.years,
-                                    " years experience"
+                                    " ",
+                                    skill.years > 1 ? "years" : "year",
+                                    " experience"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Skills.js",

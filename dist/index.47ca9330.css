@@ -107,6 +107,27 @@ main #experience .experience-item .company {
   margin-bottom: 1rem;
 }
 
+main #skills .skills-grid {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  display: grid;
+}
+
+main #skills .skills-grid .skill-item {
+  background-color: #ffffff0d;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+main #skills .skills-grid .skill-item h3 {
+  color: #fdb347;
+}
+
+main #skills .skills-grid .skill-item p {
+  color: #8b8f94;
+}
+
 .cta-button {
   color: #000;
   text-transform: uppercase;

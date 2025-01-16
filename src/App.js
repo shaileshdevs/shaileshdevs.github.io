@@ -11,13 +11,13 @@ function App() {
   return (
     <div className="app">
       <Sidebar />
-      <main className="main-content">
+      <main className="main-content shvsh">
         <Home />
         <About />
         <Experience />
         <Skills />
-        <Clients />
-        <Contact />
+        {/* <Clients /> */}
+        {/* <Contact /> */}
       </main>
     </div>
   );
