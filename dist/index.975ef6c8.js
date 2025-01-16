@@ -27886,25 +27886,46 @@ function Experience() {
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                     href: exp.url,
                                     target: "_blank",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        children: exp.company
-                                    }, void 0, false, {
-                                        fileName: "src/components/Experience.js",
-                                        lineNumber: 61,
-                                        columnNumber: 47
-                                    }, this)
-                                }, void 0, false, {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            children: exp.company
+                                        }, void 0, false, {
+                                            fileName: "src/components/Experience.js",
+                                            lineNumber: 62,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                            xmlns: "http://www.w3.org/2000/svg",
+                                            height: "8",
+                                            width: "8",
+                                            viewBox: "0 0 512 512",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                fill: "#fdb347",
+                                                d: "M432 320H400a16 16 0 0 0 -16 16V448H64V128H208a16 16 0 0 0 16-16V80a16 16 0 0 0 -16-16H48A48 48 0 0 0 0 112V464a48 48 0 0 0 48 48H400a48 48 0 0 0 48-48V336A16 16 0 0 0 432 320zM488 0h-128c-21.4 0-32.1 25.9-17 41l35.7 35.7L135 320.4a24 24 0 0 0 0 34L157.7 377a24 24 0 0 0 34 0L435.3 133.3 471 169c15 15 41 4.5 41-17V24A24 24 0 0 0 488 0z"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Experience.js",
+                                                lineNumber: 64,
+                                                columnNumber: 98
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Experience.js",
+                                            lineNumber: 64,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "src/components/Experience.js",
                                     lineNumber: 61,
                                     columnNumber: 13
                                 }, this),
-                                " | ",
+                                "|",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "period",
                                     children: exp.period
                                 }, void 0, false, {
                                     fileName: "src/components/Experience.js",
-                                    lineNumber: 61,
-                                    columnNumber: 80
+                                    lineNumber: 67,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
@@ -27917,12 +27938,12 @@ function Experience() {
                                     children: resp
                                 }, idx, false, {
                                     fileName: "src/components/Experience.js",
-                                    lineNumber: 65,
+                                    lineNumber: 71,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "src/components/Experience.js",
-                            lineNumber: 63,
+                            lineNumber: 69,
                             columnNumber: 11
                         }, this)
                     ]

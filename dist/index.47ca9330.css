@@ -107,6 +107,18 @@ main #experience .experience-item .company {
   margin-bottom: 1rem;
 }
 
+main #experience .experience-item .company a svg {
+  margin: 0 5px 5px;
+}
+
+main #experience .experience-item .company a svg path {
+  fill: #fdb347;
+}
+
+main #experience .experience-item .company .period {
+  margin: 0 5px;
+}
+
 main #skills .skills-grid {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;

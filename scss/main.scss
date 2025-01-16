@@ -121,6 +121,20 @@ main {
       .company {
         color: #8b8f94;
         margin-bottom: 1rem;
+
+        a {
+          svg {
+            margin: 0 5px 5px;
+
+            path {
+              fill: #fdb347;
+            }
+          }
+        }
+
+        .period {
+          margin: 0 5px;
+        }
       }
     }
   }
@@ -209,18 +223,16 @@ main {
   transform: translateY(-2px);
 }
   
+/* Links */
+a {
+  color: #fdb347;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
   
-  
-  /* Links */
-  a {
-    color: #fdb347;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  a:hover {
-    color: #ffca7a;
-  }
+a:hover {
+  color: #ffca7a;
+}
   
   .social-links a {
     color: #8b8f94;
