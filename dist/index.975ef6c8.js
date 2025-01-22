@@ -28531,7 +28531,8 @@ const Footer = ()=>{
             className: "resume-wrapper",
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 href: "/resume/Shailesh-Resume.pdf",
-                download: true
+                download: true,
+                children: "Download Resume"
             }, void 0, false, {
                 fileName: "src/components/Footer.js",
                 lineNumber: 5,

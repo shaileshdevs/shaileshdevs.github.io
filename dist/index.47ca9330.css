@@ -191,4 +191,8 @@ main #skills .skills-grid .skill-item .progress-container .tooltip {
 main #skills .skills-grid .skill-item .progress-container:hover .tooltip {
   display: block;
 }
+
+footer .resume-wrapper {
+  text-align: center;
+}
 /*# sourceMappingURL=index.47ca9330.css.map */
