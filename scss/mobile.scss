@@ -51,27 +51,45 @@
         left: 0;
     }
 
-    /* Overlay Styling */
-    .overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 1000;
-    }
-
-    /* Show overlay when active */
-    .overlay.active {
-        display: block;
-    }
-
     .main-content {
         margin-left: 0;
-    }
 
+        section {
+            &#home {
+                text-align: center;
+    
+                .social-links {
+                    justify-content: center;
+                }
+            }
+    
+            &#experience {
+    
+                .experience-item {
+                    padding-right: 0;
+    
+                    .company {
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .company-period-separator {
+                            display: none;
+                        }
+    
+                        .period {
+                            margin: 0;
+                        }
+                    }
+    
+                }            
+            }
+
+            h2 {
+                text-align: center;
+            }
+        }
+
+    }
 }
 
 /* Responsive Design */

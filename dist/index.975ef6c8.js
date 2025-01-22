@@ -28069,7 +28069,14 @@ function Experience() {
                                     lineNumber: 61,
                                     columnNumber: 13
                                 }, this),
-                                "|",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "company-period-separator",
+                                    children: " | "
+                                }, void 0, false, {
+                                    fileName: "src/components/Experience.js",
+                                    lineNumber: 66,
+                                    columnNumber: 13
+                                }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     className: "period",
                                     children: exp.period
