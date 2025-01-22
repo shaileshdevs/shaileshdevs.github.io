@@ -17,18 +17,34 @@ h2 {
   margin-bottom: 2rem;
   color: #fff;
 }
-  
+
+a {
+  color: #fdb347;
+  text-decoration: none;
+  transition: color .3s;
+
+  &:hover {
+    color: #ffca7a;
+  }
+}
+
+/* Logo styles */
+.logo {
+  width: 60px;
+  margin-bottom: 3rem;
+}
+
 /* Sidebar styles */
 .sidebar {
-  nav {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 250px;
-    height: 100vh;
-    background-color: #1a1f25;
-    padding: 2rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #1a1f25;
+  padding: 2rem;
 
+  nav {
     ul {
       list-style: none;
 
@@ -55,12 +71,6 @@ h2 {
     }
   }
 }
-
-/* Logo styles */
-.logo {
-  width: 60px;
-  margin-bottom: 3rem;
-}
   
 /* Main content area */
 main {
@@ -80,10 +90,12 @@ main {
       display: flex;
       gap: 1rem;
       margin-top: 2rem;
-
+      
       a {
         display: flex;
         gap: 0.5rem;
+        color: #8b8f94;
+        font-size: 1.2rem;
 
         &.github-link {
           svg {
@@ -202,75 +214,3 @@ main {
     }
   }
 }
-  
-/* CTA Button */
-.cta-button {
-  display: inline-block;
-  background-color: #fdb347;
-  color: #000;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 4px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-  
-.cta-button:hover {
-  background-color: #ffca7a;
-  transform: translateY(-2px);
-}
-  
-/* Links */
-a {
-  color: #fdb347;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-  
-a:hover {
-  color: #ffca7a;
-}
-  
-  .social-links a {
-    color: #8b8f94;
-    font-size: 1.2rem;
-  }
-  
-  /* Responsive design */
-  @media (max-width: 1024px) {
-    nav {
-      width: 200px;
-    }
-    
-    main {
-      margin-left: 200px;
-    }
-    
-    .hero h1 {
-      font-size: 3.5rem;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    nav {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    
-    main {
-      margin-left: 0;
-    }
-    
-    .hero {
-      padding: 2rem;
-      height: auto;
-    }
-    
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-  }

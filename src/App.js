@@ -7,7 +7,7 @@ import Skills from './components/Skills';
 import Clients from './components/Clients';
 import Contact from './components/Contact';
 
-function App() {
+const App = () => {
   return (
     <div className="app">
       <Sidebar />
@@ -24,4 +24,3 @@ function App() {
 }
 
 export default App;
-

@@ -17,7 +17,22 @@ h2 {
   font-size: 2.5rem;
 }
 
-.sidebar nav {
+a {
+  color: #fdb347;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+a:hover {
+  color: #ffca7a;
+}
+
+.logo {
+  width: 60px;
+  margin-bottom: 3rem;
+}
+
+.sidebar {
   background-color: #1a1f25;
   width: 250px;
   height: 100vh;
@@ -50,11 +65,6 @@ h2 {
   background-color: #fdb3471a;
 }
 
-.logo {
-  width: 60px;
-  margin-bottom: 3rem;
-}
-
 main {
   min-height: 100vh;
   margin-left: 250px;
@@ -73,7 +83,9 @@ main #home .social-links {
 }
 
 main #home .social-links a {
+  color: #8b8f94;
   gap: .5rem;
+  font-size: 1.2rem;
   display: flex;
 }
 
@@ -177,74 +189,5 @@ main #skills .skills-grid .skill-item .progress-container .tooltip {
 
 main #skills .skills-grid .skill-item .progress-container:hover .tooltip {
   display: block;
-}
-
-.cta-button {
-  color: #000;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  background-color: #fdb347;
-  border: none;
-  border-radius: 4px;
-  padding: 1rem 2rem;
-  font-weight: 600;
-  transition: all .3s;
-  display: inline-block;
-}
-
-.cta-button:hover {
-  background-color: #ffca7a;
-  transform: translateY(-2px);
-}
-
-a {
-  color: #fdb347;
-  text-decoration: none;
-  transition: color .3s;
-}
-
-a:hover {
-  color: #ffca7a;
-}
-
-.social-links a {
-  color: #8b8f94;
-  font-size: 1.2rem;
-}
-
-@media (width <= 1024px) {
-  nav {
-    width: 200px;
-  }
-
-  main {
-    margin-left: 200px;
-  }
-
-  .hero h1 {
-    font-size: 3.5rem;
-  }
-}
-
-@media (width <= 768px) {
-  nav {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-
-  main {
-    margin-left: 0;
-  }
-
-  .hero {
-    height: auto;
-    padding: 2rem;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
 }
 /*# sourceMappingURL=index.47ca9330.css.map */
