@@ -56,7 +56,7 @@
             justify-content: center;
   }
   .main-content section#experience .experience-item {
-    padding-right: 0;
+    padding: 0.8rem;
   }
   .main-content section#experience .experience-item .company {
     display: -webkit-box;
@@ -72,6 +72,12 @@
   }
   .main-content section#experience .experience-item .company .period {
     margin: 0;
+  }
+  .main-content section#experience .experience-item ul {
+    list-style-type: none;
+  }
+  .main-content section#experience .experience-item ul li {
+    margin: 1rem 0.2rem;
   }
   .main-content section h2 {
     text-align: center;

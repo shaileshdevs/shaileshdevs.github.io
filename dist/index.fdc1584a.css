@@ -60,7 +60,7 @@
   }
 
   .main-content section#experience .experience-item {
-    padding-right: 0;
+    padding: .8rem;
   }
 
   .main-content section#experience .experience-item .company {
@@ -74,6 +74,14 @@
 
   .main-content section#experience .experience-item .company .period {
     margin: 0;
+  }
+
+  .main-content section#experience .experience-item ul {
+    list-style-type: none;
+  }
+
+  .main-content section#experience .experience-item ul li {
+    margin: 1rem .2rem;
   }
 
   .main-content section h2 {

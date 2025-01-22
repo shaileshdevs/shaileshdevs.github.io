@@ -66,7 +66,7 @@
             &#experience {
     
                 .experience-item {
-                    padding-right: 0;
+                    padding: 0.8rem;
     
                     .company {
                         display: flex;
@@ -81,6 +81,13 @@
                         }
                     }
     
+                    ul {
+                        list-style-type: none;
+
+                        li {
+                            margin: 1rem 0.2rem;
+                        }
+                    }
                 }            
             }
 
