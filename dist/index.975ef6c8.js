@@ -27432,7 +27432,135 @@ $RefreshReg$(_c, "Sidebar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Hamburger":"fl9BM"}],"gkKU3":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Hamburger":"fl9BM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fl9BM":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$658d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$658d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Hamburger = (props)=>{
+    const { isMobile, sidebarOpen, setSidebarOpen } = props;
+    const toggleSidebar = ()=>{
+        setSidebarOpen(!sidebarOpen);
+    };
+    if (!isMobile) return '';
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "hamburger-wrapper",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+            className: "hamburger",
+            id: "hamburgerBtn",
+            onClick: toggleSidebar,
+            children: sidebarOpen ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                className: "close-svg",
+                width: "24",
+                height: "24",
+                viewBox: "0 0 24 24",
+                fill: "none",
+                stroke: "currentColor",
+                strokeWidth: "2",
+                strokeLinecap: "round",
+                strokeLinejoin: "round",
+                xmlns: "http://www.w3.org/2000/svg",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("line", {
+                        x1: "18",
+                        y1: "6",
+                        x2: "6",
+                        y2: "18"
+                    }, void 0, false, {
+                        fileName: "src/components/Hamburger.js",
+                        lineNumber: 33,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("line", {
+                        x1: "6",
+                        y1: "6",
+                        x2: "18",
+                        y2: "18"
+                    }, void 0, false, {
+                        fileName: "src/components/Hamburger.js",
+                        lineNumber: 34,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Hamburger.js",
+                lineNumber: 21,
+                columnNumber: 8
+            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                className: "hamburger-svg",
+                width: "24",
+                height: "24",
+                viewBox: "0 0 24 24",
+                fill: "none",
+                stroke: "currentColor",
+                strokeWidth: "2",
+                strokeLinecap: "round",
+                strokeLinejoin: "round",
+                xmlns: "http://www.w3.org/2000/svg",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("line", {
+                        x1: "3",
+                        y1: "6",
+                        x2: "21",
+                        y2: "6"
+                    }, void 0, false, {
+                        fileName: "src/components/Hamburger.js",
+                        lineNumber: 48,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("line", {
+                        x1: "3",
+                        y1: "12",
+                        x2: "21",
+                        y2: "12"
+                    }, void 0, false, {
+                        fileName: "src/components/Hamburger.js",
+                        lineNumber: 49,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("line", {
+                        x1: "3",
+                        y1: "18",
+                        x2: "21",
+                        y2: "18"
+                    }, void 0, false, {
+                        fileName: "src/components/Hamburger.js",
+                        lineNumber: 50,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Hamburger.js",
+                lineNumber: 36,
+                columnNumber: 8
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/Hamburger.js",
+            lineNumber: 14,
+            columnNumber: 4
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Hamburger.js",
+        lineNumber: 13,
+        columnNumber: 3
+    }, undefined);
+};
+_c = Hamburger;
+exports.default = Hamburger;
+var _c;
+$RefreshReg$(_c, "Hamburger");
+
+  $parcel$ReactRefreshHelpers$658d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27607,135 +27735,7 @@ function registerExportsForReactRefresh(module1) {
 },{"7422ead32dcc1e6b":"786KC","630b62916b1ae0e7":"4SQxb"}],"4SQxb":[function(require,module,exports,__globalThis) {
 module.exports = JSON.parse("{\"name\":\"react-refresh\",\"description\":\"React is a JavaScript library for building user interfaces.\",\"keywords\":[\"react\"],\"version\":\"0.14.2\",\"homepage\":\"https://reactjs.org/\",\"bugs\":\"https://github.com/facebook/react/issues\",\"license\":\"MIT\",\"files\":[\"LICENSE\",\"README.md\",\"babel.js\",\"runtime.js\",\"cjs/\",\"umd/\"],\"main\":\"runtime.js\",\"exports\":{\".\":\"./runtime.js\",\"./runtime\":\"./runtime.js\",\"./babel\":\"./babel.js\",\"./package.json\":\"./package.json\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/facebook/react.git\",\"directory\":\"packages/react\"},\"engines\":{\"node\":\">=0.10.0\"},\"devDependencies\":{\"react-16-8\":\"npm:react@16.8.0\",\"react-dom-16-8\":\"npm:react-dom@16.8.0\",\"scheduler-0-13\":\"npm:scheduler@0.13.0\"}}");
 
-},{}],"fl9BM":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$658d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$658d.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Hamburger = (props)=>{
-    const { isMobile, sidebarOpen, setSidebarOpen } = props;
-    const toggleSidebar = ()=>{
-        setSidebarOpen(!sidebarOpen);
-    };
-    if (!isMobile) return '';
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "hamburger-wrapper",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-            className: "hamburger",
-            id: "hamburgerBtn",
-            onClick: toggleSidebar,
-            children: sidebarOpen ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                className: "close-svg",
-                width: "24",
-                height: "24",
-                viewBox: "0 0 24 24",
-                fill: "none",
-                stroke: "currentColor",
-                strokeWidth: "2",
-                strokeLinecap: "round",
-                strokeLinejoin: "round",
-                xmlns: "http://www.w3.org/2000/svg",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("line", {
-                        x1: "18",
-                        y1: "6",
-                        x2: "6",
-                        y2: "18"
-                    }, void 0, false, {
-                        fileName: "src/components/Hamburger.js",
-                        lineNumber: 33,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("line", {
-                        x1: "6",
-                        y1: "6",
-                        x2: "18",
-                        y2: "18"
-                    }, void 0, false, {
-                        fileName: "src/components/Hamburger.js",
-                        lineNumber: 34,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Hamburger.js",
-                lineNumber: 21,
-                columnNumber: 8
-            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                className: "hamburger-svg",
-                width: "24",
-                height: "24",
-                viewBox: "0 0 24 24",
-                fill: "none",
-                stroke: "currentColor",
-                strokeWidth: "2",
-                strokeLinecap: "round",
-                strokeLinejoin: "round",
-                xmlns: "http://www.w3.org/2000/svg",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("line", {
-                        x1: "3",
-                        y1: "6",
-                        x2: "21",
-                        y2: "6"
-                    }, void 0, false, {
-                        fileName: "src/components/Hamburger.js",
-                        lineNumber: 48,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("line", {
-                        x1: "3",
-                        y1: "12",
-                        x2: "21",
-                        y2: "12"
-                    }, void 0, false, {
-                        fileName: "src/components/Hamburger.js",
-                        lineNumber: 49,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("line", {
-                        x1: "3",
-                        y1: "18",
-                        x2: "21",
-                        y2: "18"
-                    }, void 0, false, {
-                        fileName: "src/components/Hamburger.js",
-                        lineNumber: 50,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Hamburger.js",
-                lineNumber: 36,
-                columnNumber: 8
-            }, undefined)
-        }, void 0, false, {
-            fileName: "src/components/Hamburger.js",
-            lineNumber: 14,
-            columnNumber: 4
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/Hamburger.js",
-        lineNumber: 13,
-        columnNumber: 3
-    }, undefined);
-};
-_c = Hamburger;
-exports.default = Hamburger;
-var _c;
-$RefreshReg$(_c, "Hamburger");
-
-  $parcel$ReactRefreshHelpers$658d.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hcu4N":[function(require,module,exports,__globalThis) {
+},{}],"hcu4N":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$a290 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

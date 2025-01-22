@@ -4,7 +4,7 @@
         position: fixed;
         font-size: 24px;
         cursor: pointer;
-        z-index: 1001;
+        z-index: 99;
         padding: 15px;
         width: 100%;
         background: #000;
@@ -20,7 +20,7 @@
     /* Sidebar Styling */
     .sidebar {
         position: fixed;
-        top: 70px;
+        top: 68px;
         left: -250px; /* Initially hidden */
         width: 250px;
         height: 100%;
@@ -28,6 +28,7 @@
         color: white;
         transition: left 0.3s ease-in-out;
         padding: 0;
+        z-index: 99;
         
         nav ul {
             list-style: none;
