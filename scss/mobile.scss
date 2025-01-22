@@ -1,0 +1,112 @@
+@media (max-width: 768px) {
+    /* Hamburger Button */
+    .hamburger-wrapper {
+        position: fixed;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 99;
+        padding: 15px;
+        width: 100%;
+        background: #000;
+
+        .hamburger {
+            background: #fdb347;
+            border: solid 1px #fdb347;
+            border-radius: 5px;
+            // margin-left: 15px;
+        }
+    }
+
+    /* Sidebar Styling */
+    .sidebar {
+        position: fixed;
+        top: 68px;
+        left: -250px; /* Initially hidden */
+        width: 250px;
+        height: 100%;
+        background: #333;
+        color: white;
+        transition: left 0.3s ease-in-out;
+        padding: 0;
+        z-index: 99;
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+            li {
+                padding: 0 15px;
+                
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    /* Active class to show sidebar */
+    .sidebar.open {
+        left: 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+
+        section {
+            &#home {
+                text-align: center;
+
+                .profession-title {
+                    display: flex;
+                    flex-direction: column;
+                }
+    
+                .social-links {
+                    justify-content: center;
+                }
+            }
+    
+            &#experience {
+    
+                .experience-item {
+                    padding: 0.8rem;
+    
+                    .company {
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .company-period-separator {
+                            display: none;
+                        }
+    
+                        .period {
+                            margin: 0;
+                        }
+                    }
+    
+                    ul {
+                        list-style-type: none;
+
+                        li {
+                            margin: 1rem 0.2rem;
+                        }
+                    }
+                }            
+            }
+
+            h2 {
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none; /* Hide hamburger menu on larger screens */
+    }
+}

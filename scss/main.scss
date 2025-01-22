@@ -1,0 +1,217 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+a {
+  color: #fdb347;
+  text-decoration: none;
+  transition: color .3s;
+
+  &:hover {
+    color: #ffca7a;
+  }
+}
+
+/* Logo styles */
+.logo {
+  width: 60px;
+  margin-bottom: 3rem;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #1a1f25;
+  padding: 2rem;
+
+  nav {
+    ul {
+      list-style: none;
+
+      li {
+        &.active a {
+          color: #fdb347;
+          background-color: rgba(253, 179, 71, 0.1);
+        }
+
+        a {
+          display: block;
+          color: #8b8f94;
+          text-decoration: none;
+          padding: 1rem;
+          margin: 0.5rem 0;
+          transition: all 0.3s ease;
+    
+          &:hover {
+            color: #fdb347;
+            background-color: rgba(253, 179, 71, 0.1);
+          }
+        }
+      }
+    }
+  }
+}
+  
+/* Main content area */
+main {
+  margin-left: 250px;
+  padding: 2rem;
+  min-height: 100vh;
+
+  /* Section styles */
+  section {
+    padding: 4rem 0;
+    min-height: 100vh;
+  }
+
+  #home {
+    /* Social links */
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      
+      a {
+        display: flex;
+        gap: 0.5rem;
+        color: #8b8f94;
+        font-size: 1.2rem;
+
+        &.github-link {
+          svg {
+            fill: white;
+            width: 24px;
+            height: 24px;
+          }
+        }
+
+        &.linkedin-link {
+          svg {
+            fill: #0A66C2;
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  /* Experience section */
+  #experience {
+    .experience-item {
+      margin-bottom: 3rem;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      
+      h3 {
+        color: #fdb347;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      
+      .company {
+        display: flex;
+        color: #8b8f94;
+        margin-bottom: 1rem;
+
+        a {
+          svg {
+            margin: 0 5px 5px;
+
+            path {
+              fill: #fdb347;
+            }
+          }
+        }
+
+        .period {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+
+  /* Skills section */
+  #skills {
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      
+      .skill-item {
+        background-color: #ffffff0d;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+        h3 {
+          color: #fdb347;
+        }
+
+        p {
+          color: #8b8f94;
+        }
+
+        .progress-container {
+          position: relative;
+          margin-top: 10px;
+
+          progress {
+            width: 100%;
+            height: 8px;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+          }
+        
+          progress::-webkit-progress-bar {
+            background-color: red;
+            border-radius: 5px;
+          }
+        
+          progress::-webkit-progress-value {
+            background-color: #fdb347;
+            border-radius: 5px;
+          }
+
+          .tooltip {
+            color: #fff;
+            white-space: nowrap;
+            z-index: 10;
+            background-color: #000000b3;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 12px;
+            display: none;
+            position: absolute;
+            right: 0;
+          }
+
+          &:hover .tooltip {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

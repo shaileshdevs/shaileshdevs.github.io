@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+a {
+  color: #fdb347;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+a:hover {
+  color: #ffca7a;
+}
+
+.logo {
+  width: 60px;
+  margin-bottom: 3rem;
+}
+
+.sidebar {
+  background-color: #1a1f25;
+  width: 250px;
+  height: 100vh;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li.active a {
+  color: #fdb347;
+  background-color: #fdb3471a;
+}
+
+.sidebar nav ul li a {
+  color: #8b8f94;
+  margin: .5rem 0;
+  padding: 1rem;
+  text-decoration: none;
+  transition: all .3s;
+  display: block;
+}
+
+.sidebar nav ul li a:hover {
+  color: #fdb347;
+  background-color: #fdb3471a;
+}
+
+main {
+  min-height: 100vh;
+  margin-left: 250px;
+  padding: 2rem;
+}
+
+main section {
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+main #home .social-links {
+  gap: 1rem;
+  margin-top: 2rem;
+  display: flex;
+}
+
+main #home .social-links a {
+  color: #8b8f94;
+  gap: .5rem;
+  font-size: 1.2rem;
+  display: flex;
+}
+
+main #home .social-links a.github-link svg {
+  fill: #fff;
+  width: 24px;
+  height: 24px;
+}
+
+main #home .social-links a.linkedin-link svg {
+  fill: #0a66c2;
+  width: 24px;
+  height: 24px;
+}
+
+main #experience .experience-item {
+  background-color: #ffffff0d;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+
+main #experience .experience-item h3 {
+  color: #fdb347;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+main #experience .experience-item .company {
+  color: #8b8f94;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+main #experience .experience-item .company a svg {
+  margin: 0 5px 5px;
+}
+
+main #experience .experience-item .company a svg path {
+  fill: #fdb347;
+}
+
+main #experience .experience-item .company .period {
+  margin: 0 5px;
+}
+
+main #skills .skills-grid {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  display: grid;
+}
+
+main #skills .skills-grid .skill-item {
+  background-color: #ffffff0d;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+main #skills .skills-grid .skill-item h3 {
+  color: #fdb347;
+}
+
+main #skills .skills-grid .skill-item p {
+  color: #8b8f94;
+}
+
+main #skills .skills-grid .skill-item .progress-container {
+  margin-top: 10px;
+  position: relative;
+}
+
+main #skills .skills-grid .skill-item .progress-container progress {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  width: 100%;
+  height: 8px;
+}
+
+main #skills .skills-grid .skill-item .progress-container progress::-webkit-progress-bar {
+  background-color: red;
+  border-radius: 5px;
+}
+
+main #skills .skills-grid .skill-item .progress-container progress::-webkit-progress-value {
+  background-color: #fdb347;
+  border-radius: 5px;
+}
+
+main #skills .skills-grid .skill-item .progress-container .tooltip {
+  color: #fff;
+  white-space: nowrap;
+  z-index: 10;
+  background-color: #000000b3;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  display: none;
+  position: absolute;
+  right: 0;
+}
+
+main #skills .skills-grid .skill-item .progress-container:hover .tooltip {
+  display: block;
+}
+/*# sourceMappingURL=index.47ca9330.css.map */

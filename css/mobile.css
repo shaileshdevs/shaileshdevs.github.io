@@ -1,0 +1,100 @@
+@media (max-width: 768px) {
+  /* Hamburger Button */
+  .hamburger-wrapper {
+    position: fixed;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 99;
+    padding: 15px;
+    width: 100%;
+    background: #000;
+  }
+  .hamburger-wrapper .hamburger {
+    background: #fdb347;
+    border: solid 1px #fdb347;
+    border-radius: 5px;
+  }
+  /* Sidebar Styling */
+  .sidebar {
+    position: fixed;
+    top: 68px;
+    left: -250px; /* Initially hidden */
+    width: 250px;
+    height: 100%;
+    background: #333;
+    color: white;
+    -webkit-transition: left 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out;
+    padding: 0;
+    z-index: 99;
+  }
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar nav ul li {
+    padding: 0 15px;
+  }
+  .sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  /* Active class to show sidebar */
+  .sidebar.open {
+    left: 0;
+  }
+  .main-content {
+    margin-left: 0;
+  }
+  .main-content section#home {
+    text-align: center;
+  }
+  .main-content section#home .profession-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-content section#home .social-links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-content section#experience .experience-item {
+    padding: 0.8rem;
+  }
+  .main-content section#experience .experience-item .company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-content section#experience .experience-item .company .company-period-separator {
+    display: none;
+  }
+  .main-content section#experience .experience-item .company .period {
+    margin: 0;
+  }
+  .main-content section#experience .experience-item ul {
+    list-style-type: none;
+  }
+  .main-content section#experience .experience-item ul li {
+    margin: 1rem 0.2rem;
+  }
+  .main-content section h2 {
+    text-align: center;
+  }
+}
+/* Responsive Design */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none; /* Hide hamburger menu on larger screens */
+  }
+}

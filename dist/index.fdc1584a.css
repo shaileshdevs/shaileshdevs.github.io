@@ -1,0 +1,102 @@
+@media (width <= 768px) {
+  .hamburger-wrapper {
+    cursor: pointer;
+    z-index: 99;
+    background: #000;
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    position: fixed;
+  }
+
+  .hamburger-wrapper .hamburger {
+    background: #fdb347;
+    border: 1px solid #fdb347;
+    border-radius: 5px;
+  }
+
+  .sidebar {
+    color: #fff;
+    z-index: 99;
+    background: #333;
+    width: 250px;
+    height: 100%;
+    padding: 0;
+    transition: left .3s ease-in-out;
+    position: fixed;
+    top: 68px;
+    left: -250px;
+  }
+
+  .sidebar nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .sidebar nav ul li {
+    padding: 0 15px;
+  }
+
+  .sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .main-content section#home {
+    text-align: center;
+  }
+
+  .main-content section#home .profession-title {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .main-content section#home .social-links {
+    justify-content: center;
+  }
+
+  .main-content section#experience .experience-item {
+    padding: .8rem;
+  }
+
+  .main-content section#experience .experience-item .company {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .main-content section#experience .experience-item .company .company-period-separator {
+    display: none;
+  }
+
+  .main-content section#experience .experience-item .company .period {
+    margin: 0;
+  }
+
+  .main-content section#experience .experience-item ul {
+    list-style-type: none;
+  }
+
+  .main-content section#experience .experience-item ul li {
+    margin: 1rem .2rem;
+  }
+
+  .main-content section h2 {
+    text-align: center;
+  }
+}
+
+@media (width >= 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.fdc1584a.css.map */

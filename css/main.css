@@ -1,0 +1,187 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+a {
+  color: #fdb347;
+  text-decoration: none;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #ffca7a;
+}
+
+/* Logo styles */
+.logo {
+  width: 60px;
+  margin-bottom: 3rem;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #1a1f25;
+  padding: 2rem;
+}
+.sidebar nav ul {
+  list-style: none;
+}
+.sidebar nav ul li.active a {
+  color: #fdb347;
+  background-color: rgba(253, 179, 71, 0.1);
+}
+.sidebar nav ul li a {
+  display: block;
+  color: #8b8f94;
+  text-decoration: none;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.sidebar nav ul li a:hover {
+  color: #fdb347;
+  background-color: rgba(253, 179, 71, 0.1);
+}
+
+/* Main content area */
+main {
+  margin-left: 250px;
+  padding: 2rem;
+  min-height: 100vh;
+  /* Section styles */
+  /* Experience section */
+  /* Skills section */
+}
+main section {
+  padding: 4rem 0;
+  min-height: 100vh;
+}
+main #home {
+  /* Social links */
+}
+main #home .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+main #home .social-links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  color: #8b8f94;
+  font-size: 1.2rem;
+}
+main #home .social-links a.github-link svg {
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
+main #home .social-links a.linkedin-link svg {
+  fill: #0A66C2;
+  width: 24px;
+  height: 24px;
+}
+main #experience .experience-item {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+main #experience .experience-item h3 {
+  color: #fdb347;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+main #experience .experience-item .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #8b8f94;
+  margin-bottom: 1rem;
+}
+main #experience .experience-item .company a svg {
+  margin: 0 5px 5px;
+}
+main #experience .experience-item .company a svg path {
+  fill: #fdb347;
+}
+main #experience .experience-item .company .period {
+  margin: 0 5px;
+}
+main #skills .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+main #skills .skills-grid .skill-item {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+main #skills .skills-grid .skill-item h3 {
+  color: #fdb347;
+}
+main #skills .skills-grid .skill-item p {
+  color: #8b8f94;
+}
+main #skills .skills-grid .skill-item .progress-container {
+  position: relative;
+  margin-top: 10px;
+}
+main #skills .skills-grid .skill-item .progress-container progress {
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+}
+main #skills .skills-grid .skill-item .progress-container progress::-webkit-progress-bar {
+  background-color: red;
+  border-radius: 5px;
+}
+main #skills .skills-grid .skill-item .progress-container progress::-webkit-progress-value {
+  background-color: #fdb347;
+  border-radius: 5px;
+}
+main #skills .skills-grid .skill-item .progress-container .tooltip {
+  color: #fff;
+  white-space: nowrap;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7019607843);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  display: none;
+  position: absolute;
+  right: 0;
+}
+main #skills .skills-grid .skill-item .progress-container:hover .tooltip {
+  display: block;
+}
