@@ -4,7 +4,9 @@ function Home() {
   return (
     <section id="home">
       <h1>Shailesh Vishwakarma</h1>
-      <h2>WordPress & Full Stack Developer</h2>
+      <h2 className="profession-title">
+        <span>WordPress &</span> <span>Full Stack Developer</span>
+      </h2>
       <p>With over 6 years of experience in WordPress development.</p>
       <div className="social-links">
         <a href="https://github.com/shaileshdevs" target="_blank" rel="noopener noreferrer" className="github-link">

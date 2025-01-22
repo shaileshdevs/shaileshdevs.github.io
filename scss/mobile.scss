@@ -57,6 +57,11 @@
         section {
             &#home {
                 text-align: center;
+
+                .profession-title {
+                    display: flex;
+                    flex-direction: column;
+                }
     
                 .social-links {
                     justify-content: center;
