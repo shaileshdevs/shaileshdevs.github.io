@@ -1,13 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Hamburger from './Hamburger';
 
-const Sidebar = () => {
-  const [ isMobile, setIsMobile ] = useState(window.innerWidth < 768);
+const Sidebar = (props) => {
+  const { homeRef, aboutRef, experienceRef, skillsRef } = props;
+  const [ isMobile, setIsMobile ] = useState(false);
   const [ sidebarOpen, setSidebarOpen ] = useState(!isMobile);
   const [ activeMenu, setActiveMenu ] = useState("home");
 
-  const props = {
+  const refs = [
+    homeRef, aboutRef, experienceRef, skillsRef
+  ];
+
+  const hamburgerProps = {
     isMobile: isMobile,
     setIsMobile: setIsMobile,
     sidebarOpen: sidebarOpen,
@@ -17,9 +22,43 @@ const Sidebar = () => {
   let sidebarClass = "sidebar";
   sidebarClass = sidebarClass + ( sidebarOpen ? " open" : "" ); 
 
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768); // ✅ Update after mount
+  }, []);
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3, // Trigger when 60% of the section is visible
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveMenu(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+
+    refs.forEach(ref => {
+      ref.current && observer.observe(ref.current)
+    }
+    );
+
+    return () => {
+      refs.forEach(ref => ref.current && observer.unobserve(ref.current));
+    };
+  }, [homeRef, aboutRef, experienceRef, skillsRef]);
+
   return (
     <>
-      <Hamburger {...props} />
+      <Hamburger {...hamburgerProps} />
       
       <aside className={sidebarClass}>
         <nav className="menus">

@@ -1,6 +1,8 @@
 import React from 'react';
 
-function Experience() {
+const Experience = (props) => {
+  const { experienceRef } = props;
+
   const experiences = [
     {
       title: "Sr. Full Stack Developer",
@@ -52,7 +54,7 @@ function Experience() {
   ];
 
   return (
-    <section id="experience">
+    <section id="experience" ref={experienceRef} >
       <h2>Experience</h2>
       {experiences.map((exp, index) => (
         <div key={index} className="experience-item">

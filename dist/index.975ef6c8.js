@@ -27242,56 +27242,76 @@ var _contact = require("./components/Contact");
 var _contactDefault = parcelHelpers.interopDefault(_contact);
 var _footer = require("./components/Footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
+var _s = $RefreshSig$();
 const App = ()=>{
+    _s();
+    const homeRef = (0, _react.useRef)(null);
+    const aboutRef = (0, _react.useRef)(null);
+    const experienceRef = (0, _react.useRef)(null);
+    const skillsRef = (0, _react.useRef)(null);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "app",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sidebarDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sidebarDefault.default), {
+                homeRef: homeRef,
+                aboutRef: aboutRef,
+                experienceRef: experienceRef,
+                skillsRef: skillsRef
+            }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 14,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
-                className: "main-content shvsh",
+                className: "main-content",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {
+                        homeRef: homeRef
+                    }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 16,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {
+                        aboutRef: aboutRef
+                    }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 17,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _experienceDefault.default), {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _experienceDefault.default), {
+                        experienceRef: experienceRef
+                    }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 18,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skillsDefault.default), {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skillsDefault.default), {
+                        skillsRef: skillsRef
+                    }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 19,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.js",
-                lineNumber: 15,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 23,
+                lineNumber: 28,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 13,
+        lineNumber: 18,
         columnNumber: 5
     }, undefined);
 };
+_s(App, "355+ojN+wiO5KeGymiYVAp26Wbc=");
 _c = App;
 exports.default = App;
 var _c;
@@ -27302,7 +27322,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./components/Sidebar":"aIxFa","./components/Home":"hcu4N","./components/About":"9R1Eu","./components/Experience":"coHtl","./components/Skills":"OHDzu","./components/Clients":"4wrjp","./components/Contact":"cgAOG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Footer":"8pPOA"}],"aIxFa":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./components/Sidebar":"aIxFa","./components/Home":"hcu4N","./components/About":"9R1Eu","./components/Experience":"coHtl","./components/Skills":"OHDzu","./components/Clients":"4wrjp","./components/Contact":"cgAOG","./components/Footer":"8pPOA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aIxFa":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$94ac = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27317,12 +27337,19 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _hamburger = require("./Hamburger");
 var _hamburgerDefault = parcelHelpers.interopDefault(_hamburger);
 var _s = $RefreshSig$();
-const Sidebar = ()=>{
+const Sidebar = (props)=>{
     _s();
-    const [isMobile, setIsMobile] = (0, _react.useState)(window.innerWidth < 768);
+    const { homeRef, aboutRef, experienceRef, skillsRef } = props;
+    const [isMobile, setIsMobile] = (0, _react.useState)(false);
     const [sidebarOpen, setSidebarOpen] = (0, _react.useState)(!isMobile);
     const [activeMenu, setActiveMenu] = (0, _react.useState)("home");
-    const props = {
+    const refs = [
+        homeRef,
+        aboutRef,
+        experienceRef,
+        skillsRef
+    ];
+    const hamburgerProps = {
         isMobile: isMobile,
         setIsMobile: setIsMobile,
         sidebarOpen: sidebarOpen,
@@ -27330,13 +27357,40 @@ const Sidebar = ()=>{
     };
     let sidebarClass = "sidebar";
     sidebarClass = sidebarClass + (sidebarOpen ? " open" : "");
+    (0, _react.useEffect)(()=>{
+        setIsMobile(window.innerWidth < 768); // ✅ Update after mount
+    }, []);
+    (0, _react.useEffect)(()=>{
+        const observerOptions = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.3
+        };
+        const observerCallback = (entries)=>{
+            entries.forEach((entry)=>{
+                if (entry.isIntersecting) setActiveMenu(entry.target.id);
+            });
+        };
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+        refs.forEach((ref)=>{
+            ref.current && observer.observe(ref.current);
+        });
+        return ()=>{
+            refs.forEach((ref)=>ref.current && observer.unobserve(ref.current));
+        };
+    }, [
+        homeRef,
+        aboutRef,
+        experienceRef,
+        skillsRef
+    ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _hamburgerDefault.default), {
-                ...props
+                ...hamburgerProps
             }, void 0, false, {
                 fileName: "src/components/Sidebar.js",
-                lineNumber: 22,
+                lineNumber: 61,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("aside", {
@@ -27353,12 +27407,12 @@ const Sidebar = ()=>{
                                     children: "Home"
                                 }, void 0, false, {
                                     fileName: "src/components/Sidebar.js",
-                                    lineNumber: 31,
+                                    lineNumber: 70,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Sidebar.js",
-                                lineNumber: 27,
+                                lineNumber: 66,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27369,12 +27423,12 @@ const Sidebar = ()=>{
                                     children: "About"
                                 }, void 0, false, {
                                     fileName: "src/components/Sidebar.js",
-                                    lineNumber: 37,
+                                    lineNumber: 76,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Sidebar.js",
-                                lineNumber: 33,
+                                lineNumber: 72,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27385,12 +27439,12 @@ const Sidebar = ()=>{
                                     children: "Experience"
                                 }, void 0, false, {
                                     fileName: "src/components/Sidebar.js",
-                                    lineNumber: 43,
+                                    lineNumber: 82,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Sidebar.js",
-                                lineNumber: 39,
+                                lineNumber: 78,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27401,34 +27455,34 @@ const Sidebar = ()=>{
                                     children: "Skills"
                                 }, void 0, false, {
                                     fileName: "src/components/Sidebar.js",
-                                    lineNumber: 49,
+                                    lineNumber: 88,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Sidebar.js",
-                                lineNumber: 45,
+                                lineNumber: 84,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Sidebar.js",
-                        lineNumber: 26,
+                        lineNumber: 65,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Sidebar.js",
-                    lineNumber: 25,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Sidebar.js",
-                lineNumber: 24,
+                lineNumber: 63,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Sidebar, "xw/XOQtPaIre82DjdJ3Zj/EC20Q=");
+_s(Sidebar, "EUGNeJXz1bqDzghBJmTwfhwHcSc=");
 _c = Sidebar;
 exports.default = Sidebar;
 var _c;
@@ -27754,17 +27808,19 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-function Home() {
+const Home = (props)=>{
+    const { homeRef } = props;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         id: "home",
+        ref: homeRef,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Shailesh Vishwakarma"
             }, void 0, false, {
                 fileName: "src/components/Home.js",
-                lineNumber: 6,
+                lineNumber: 9,
                 columnNumber: 7
-            }, this),
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 className: "profession-title",
                 children: [
@@ -27772,30 +27828,30 @@ function Home() {
                         children: "WordPress &"
                     }, void 0, false, {
                         fileName: "src/components/Home.js",
-                        lineNumber: 8,
+                        lineNumber: 11,
                         columnNumber: 9
-                    }, this),
+                    }, undefined),
                     " ",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         children: "Full Stack Developer"
                     }, void 0, false, {
                         fileName: "src/components/Home.js",
-                        lineNumber: 8,
+                        lineNumber: 11,
                         columnNumber: 34
-                    }, this)
+                    }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Home.js",
-                lineNumber: 7,
+                lineNumber: 10,
                 columnNumber: 7
-            }, this),
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "With over 6 years of experience in WordPress development."
             }, void 0, false, {
                 fileName: "src/components/Home.js",
-                lineNumber: 10,
+                lineNumber: 13,
                 columnNumber: 7
-            }, this),
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "social-links",
                 children: [
@@ -27815,35 +27871,35 @@ function Home() {
                                         children: "GitHub"
                                     }, void 0, false, {
                                         fileName: "src/components/Home.js",
-                                        lineNumber: 14,
+                                        lineNumber: 17,
                                         columnNumber: 13
-                                    }, this),
+                                    }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                                         d: "M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.385.6.11.793-.26.793-.577v-2.165c-3.338.726-4.042-1.416-4.042-1.416-.547-1.387-1.334-1.756-1.334-1.756-1.091-.745.083-.729.083-.729 1.205.085 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.997.108-.775.42-1.305.763-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.382 1.235-3.22-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.482 11.482 0 0 1 3.003-.404c1.02.004 2.045.138 3.003.404 2.29-1.552 3.296-1.23 3.296-1.23.654 1.653.242 2.873.12 3.176.77.838 1.233 1.91 1.233 3.22 0 4.61-2.806 5.625-5.478 5.921.431.372.817 1.103.817 2.222v3.293c0 .32.192.693.8.576C20.565 21.796 24 17.298 24 12 24 5.373 18.627 0 12 0z"
                                     }, void 0, false, {
                                         fileName: "src/components/Home.js",
-                                        lineNumber: 15,
+                                        lineNumber: 18,
                                         columnNumber: 13
-                                    }, this)
+                                    }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Home.js",
-                                lineNumber: 13,
+                                lineNumber: 16,
                                 columnNumber: 11
-                            }, this),
+                            }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 children: "GitHub"
                             }, void 0, false, {
                                 fileName: "src/components/Home.js",
-                                lineNumber: 18,
+                                lineNumber: 21,
                                 columnNumber: 11
-                            }, this)
+                            }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Home.js",
-                        lineNumber: 12,
+                        lineNumber: 15,
                         columnNumber: 9
-                    }, this),
+                    }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                         href: "https://www.linkedin.com/in/shailesh-vishwakarma-20a798104/",
                         target: "_blank",
@@ -27862,48 +27918,48 @@ function Home() {
                                         children: "LinkedIn"
                                     }, void 0, false, {
                                         fileName: "src/components/Home.js",
-                                        lineNumber: 23,
+                                        lineNumber: 26,
                                         columnNumber: 13
-                                    }, this),
+                                    }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                                         d: "M22.23 0H1.77C.79 0 0 .774 0 1.726v20.548C0 23.226.79 24 1.77 24h20.46c.98 0 1.77-.774 1.77-1.726V1.726C24 .774 23.21 0 22.23 0zM7.12 20.452H3.56V9h3.56v11.452zM5.34 7.56c-1.14 0-2.06-.92-2.06-2.06s.92-2.06 2.06-2.06c1.14 0 2.06.92 2.06 2.06s-.92 2.06-2.06 2.06zM20.45 20.452h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.34V9h3.42v1.57h.05c.48-.91 1.67-1.85 3.44-1.85 3.68 0 4.36 2.42 4.36 5.57v6.15z"
                                     }, void 0, false, {
                                         fileName: "src/components/Home.js",
-                                        lineNumber: 24,
+                                        lineNumber: 27,
                                         columnNumber: 13
-                                    }, this)
+                                    }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Home.js",
-                                lineNumber: 22,
+                                lineNumber: 25,
                                 columnNumber: 11
-                            }, this),
+                            }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 children: "LinkedIn"
                             }, void 0, false, {
                                 fileName: "src/components/Home.js",
-                                lineNumber: 27,
+                                lineNumber: 30,
                                 columnNumber: 11
-                            }, this)
+                            }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Home.js",
-                        lineNumber: 21,
+                        lineNumber: 24,
                         columnNumber: 9
-                    }, this)
+                    }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Home.js",
-                lineNumber: 11,
+                lineNumber: 14,
                 columnNumber: 7
-            }, this)
+            }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Home.js",
-        lineNumber: 5,
+        lineNumber: 8,
         columnNumber: 5
-    }, this);
-}
+    }, undefined);
+};
 _c = Home;
 exports.default = Home;
 var _c;
@@ -27926,43 +27982,45 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-function About() {
+const About = (props)=>{
+    const { aboutRef } = props;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         id: "about",
+        ref: aboutRef,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "About Me"
             }, void 0, false, {
                 fileName: "src/components/About.js",
-                lineNumber: 6,
+                lineNumber: 8,
                 columnNumber: 7
-            }, this),
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "I am a dedicated and skilled software engineer specializing in WordPress development. My experience includes extensive work in creating and modifying WordPress plugins and themes. I have a strong foundation in software engineering principles, best practices and WordPress coding standards. I am well-versed in integrating third-party services like Elastic Search, Mailchimp."
             }, void 0, false, {
                 fileName: "src/components/About.js",
-                lineNumber: 7,
+                lineNumber: 9,
                 columnNumber: 7
-            }, this),
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                 fileName: "src/components/About.js",
-                lineNumber: 8,
+                lineNumber: 10,
                 columnNumber: 7
-            }, this),
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Along with WordPress, I have a deep understanding of web fundamentals and full-stack development, allowing me to create comprehensive and efficient web solutions."
             }, void 0, false, {
                 fileName: "src/components/About.js",
-                lineNumber: 9,
+                lineNumber: 11,
                 columnNumber: 7
-            }, this)
+            }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/About.js",
-        lineNumber: 5,
+        lineNumber: 7,
         columnNumber: 5
-    }, this);
-}
+    }, undefined);
+};
 _c = About;
 exports.default = About;
 var _c;
@@ -27985,7 +28043,8 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-function Experience() {
+const Experience = (props)=>{
+    const { experienceRef } = props;
     const experiences = [
         {
             title: "Sr. Full Stack Developer",
@@ -28037,14 +28096,15 @@ function Experience() {
     ];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         id: "experience",
+        ref: experienceRef,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "Experience"
             }, void 0, false, {
                 fileName: "src/components/Experience.js",
-                lineNumber: 56,
+                lineNumber: 58,
                 columnNumber: 7
-            }, this),
+            }, undefined),
             experiences.map((exp, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "experience-item",
                     children: [
@@ -28052,9 +28112,9 @@ function Experience() {
                             children: exp.title
                         }, void 0, false, {
                             fileName: "src/components/Experience.js",
-                            lineNumber: 59,
+                            lineNumber: 61,
                             columnNumber: 11
-                        }, this),
+                        }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             className: "company",
                             children: [
@@ -28066,9 +28126,9 @@ function Experience() {
                                             children: exp.company
                                         }, void 0, false, {
                                             fileName: "src/components/Experience.js",
-                                            lineNumber: 62,
+                                            lineNumber: 64,
                                             columnNumber: 15
-                                        }, this),
+                                        }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
                                             xmlns: "http://www.w3.org/2000/svg",
                                             height: "8",
@@ -28079,68 +28139,68 @@ function Experience() {
                                                 d: "M432 320H400a16 16 0 0 0 -16 16V448H64V128H208a16 16 0 0 0 16-16V80a16 16 0 0 0 -16-16H48A48 48 0 0 0 0 112V464a48 48 0 0 0 48 48H400a48 48 0 0 0 48-48V336A16 16 0 0 0 432 320zM488 0h-128c-21.4 0-32.1 25.9-17 41l35.7 35.7L135 320.4a24 24 0 0 0 0 34L157.7 377a24 24 0 0 0 34 0L435.3 133.3 471 169c15 15 41 4.5 41-17V24A24 24 0 0 0 488 0z"
                                             }, void 0, false, {
                                                 fileName: "src/components/Experience.js",
-                                                lineNumber: 64,
+                                                lineNumber: 66,
                                                 columnNumber: 98
-                                            }, this)
+                                            }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Experience.js",
-                                            lineNumber: 64,
+                                            lineNumber: 66,
                                             columnNumber: 15
-                                        }, this)
+                                        }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Experience.js",
-                                    lineNumber: 61,
+                                    lineNumber: 63,
                                     columnNumber: 13
-                                }, this),
+                                }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     className: "company-period-separator",
                                     children: " | "
                                 }, void 0, false, {
                                     fileName: "src/components/Experience.js",
-                                    lineNumber: 66,
+                                    lineNumber: 68,
                                     columnNumber: 13
-                                }, this),
+                                }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     className: "period",
                                     children: exp.period
                                 }, void 0, false, {
                                     fileName: "src/components/Experience.js",
-                                    lineNumber: 67,
+                                    lineNumber: 69,
                                     columnNumber: 13
-                                }, this)
+                                }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Experience.js",
-                            lineNumber: 60,
+                            lineNumber: 62,
                             columnNumber: 11
-                        }, this),
+                        }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                             children: exp.responsibilities.map((resp, idx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                     children: resp
                                 }, idx, false, {
                                     fileName: "src/components/Experience.js",
-                                    lineNumber: 71,
+                                    lineNumber: 73,
                                     columnNumber: 15
-                                }, this))
+                                }, undefined))
                         }, void 0, false, {
                             fileName: "src/components/Experience.js",
-                            lineNumber: 69,
+                            lineNumber: 71,
                             columnNumber: 11
-                        }, this)
+                        }, undefined)
                     ]
                 }, index, true, {
                     fileName: "src/components/Experience.js",
-                    lineNumber: 58,
+                    lineNumber: 60,
                     columnNumber: 9
-                }, this))
+                }, undefined))
         ]
     }, void 0, true, {
         fileName: "src/components/Experience.js",
-        lineNumber: 55,
+        lineNumber: 57,
         columnNumber: 5
-    }, this);
-}
+    }, undefined);
+};
 _c = Experience;
 exports.default = Experience;
 var _c;
@@ -28163,7 +28223,8 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-function Skills() {
+const Skills = (props)=>{
+    const { skillsRef } = props;
     const skills = [
         {
             name: "WordPress",
@@ -28223,14 +28284,15 @@ function Skills() {
     ];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         id: "skills",
+        ref: skillsRef,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "Skills"
             }, void 0, false, {
                 fileName: "src/components/Skills.js",
-                lineNumber: 20,
+                lineNumber: 22,
                 columnNumber: 7
-            }, this),
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "skills-grid",
                 children: skills.map((skill, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28240,9 +28302,9 @@ function Skills() {
                                 children: skill.name
                             }, void 0, false, {
                                 fileName: "src/components/Skills.js",
-                                lineNumber: 24,
+                                lineNumber: 26,
                                 columnNumber: 13
-                            }, this),
+                            }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: [
                                     skill.years,
@@ -28252,9 +28314,9 @@ function Skills() {
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Skills.js",
-                                lineNumber: 25,
+                                lineNumber: 27,
                                 columnNumber: 13
-                            }, this),
+                            }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "progress-container",
                                 children: [
@@ -28264,9 +28326,9 @@ function Skills() {
                                         max: "10"
                                     }, void 0, false, {
                                         fileName: "src/components/Skills.js",
-                                        lineNumber: 27,
+                                        lineNumber: 29,
                                         columnNumber: 15
-                                    }, this),
+                                    }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         className: "tooltip",
                                         children: [
@@ -28276,33 +28338,33 @@ function Skills() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Skills.js",
-                                        lineNumber: 28,
+                                        lineNumber: 30,
                                         columnNumber: 15
-                                    }, this)
+                                    }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Skills.js",
-                                lineNumber: 26,
+                                lineNumber: 28,
                                 columnNumber: 13
-                            }, this)
+                            }, undefined)
                         ]
                     }, index, true, {
                         fileName: "src/components/Skills.js",
-                        lineNumber: 23,
+                        lineNumber: 25,
                         columnNumber: 11
-                    }, this))
+                    }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Skills.js",
-                lineNumber: 21,
+                lineNumber: 23,
                 columnNumber: 7
-            }, this)
+            }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Skills.js",
-        lineNumber: 19,
+        lineNumber: 21,
         columnNumber: 5
-    }, this);
-}
+    }, undefined);
+};
 _c = Skills;
 exports.default = Skills;
 var _c;
@@ -28559,6 +28621,6 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","9mu7C","8lqZg"], "8lqZg", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","9mu7C","8lqZg"], "8lqZg", "parcelRequire94c2")
 
 //# sourceMappingURL=index.975ef6c8.js.map

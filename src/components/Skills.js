@@ -1,6 +1,8 @@
 import React from 'react';
 
-function Skills() {
+const Skills = (props) => {
+  const { skillsRef } = props;
+
   const skills = [
     { name: "WordPress", years: 6, skillIndex: 8 },
     { name: "PHP", years: 6, skillIndex: 8 },
@@ -16,7 +18,7 @@ function Skills() {
   ];
 
   return (
-    <section id="skills">
+    <section id="skills" ref={skillsRef} >
       <h2>Skills</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (

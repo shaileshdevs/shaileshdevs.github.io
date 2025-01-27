@@ -1,8 +1,11 @@
 import React from 'react';
 
-function Home() {
+const Home = (props) => {
+  
+  const { homeRef } = props;
+
   return (
-    <section id="home">
+    <section id="home" ref={homeRef} >
       <h1>Shailesh Vishwakarma</h1>
       <h2 className="profession-title">
         <span>WordPress &</span> <span>Full Stack Developer</span>
