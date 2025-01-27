@@ -27358,13 +27358,16 @@ const Sidebar = (props)=>{
     let sidebarClass = "sidebar";
     sidebarClass = sidebarClass + (sidebarOpen ? " open" : "");
     (0, _react.useEffect)(()=>{
-        setIsMobile(window.innerWidth < 768); // ✅ Update after mount
+        if (window.innerWidth < 768) {
+            setIsMobile(true);
+            setSidebarOpen(false);
+        }
     }, []);
     (0, _react.useEffect)(()=>{
         const observerOptions = {
             root: null,
             rootMargin: "0px",
-            threshold: 0.3
+            threshold: 0.1
         };
         const observerCallback = (entries)=>{
             entries.forEach((entry)=>{
@@ -27390,7 +27393,7 @@ const Sidebar = (props)=>{
                 ...hamburgerProps
             }, void 0, false, {
                 fileName: "src/components/Sidebar.js",
-                lineNumber: 61,
+                lineNumber: 64,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("aside", {
@@ -27407,12 +27410,12 @@ const Sidebar = (props)=>{
                                     children: "Home"
                                 }, void 0, false, {
                                     fileName: "src/components/Sidebar.js",
-                                    lineNumber: 70,
+                                    lineNumber: 73,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Sidebar.js",
-                                lineNumber: 66,
+                                lineNumber: 69,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27423,12 +27426,12 @@ const Sidebar = (props)=>{
                                     children: "About"
                                 }, void 0, false, {
                                     fileName: "src/components/Sidebar.js",
-                                    lineNumber: 76,
+                                    lineNumber: 79,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Sidebar.js",
-                                lineNumber: 72,
+                                lineNumber: 75,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27439,12 +27442,12 @@ const Sidebar = (props)=>{
                                     children: "Experience"
                                 }, void 0, false, {
                                     fileName: "src/components/Sidebar.js",
-                                    lineNumber: 82,
+                                    lineNumber: 85,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Sidebar.js",
-                                lineNumber: 78,
+                                lineNumber: 81,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27455,28 +27458,28 @@ const Sidebar = (props)=>{
                                     children: "Skills"
                                 }, void 0, false, {
                                     fileName: "src/components/Sidebar.js",
-                                    lineNumber: 88,
+                                    lineNumber: 91,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Sidebar.js",
-                                lineNumber: 84,
+                                lineNumber: 87,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Sidebar.js",
-                        lineNumber: 65,
+                        lineNumber: 68,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Sidebar.js",
-                    lineNumber: 64,
+                    lineNumber: 67,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Sidebar.js",
-                lineNumber: 63,
+                lineNumber: 66,
                 columnNumber: 7
             }, undefined)
         ]

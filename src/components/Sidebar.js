@@ -23,14 +23,17 @@ const Sidebar = (props) => {
   sidebarClass = sidebarClass + ( sidebarOpen ? " open" : "" ); 
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 768); // ✅ Update after mount
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+      setSidebarOpen(false)
+    }
   }, []);
 
   useEffect(() => {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.3, // Trigger when 60% of the section is visible
+      threshold: 0.1, // Trigger when 60% of the section is visible
     };
 
     const observerCallback = (entries) => {
